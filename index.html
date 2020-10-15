@@ -1010,21 +1010,22 @@ Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recycler
 							<tr id="uraniumTier5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Planetary Nuclear Plant: <span id="planetNuke">0</span>
+										Nhà máy hạt nhân hành tinh: <span id="planetNuke">0</span>
 									</h3>
 									<span>
-										This huge factory is as large as a planet, fusing together Uranium from common elements.
+										Nhà máy khổng lồ này rộng như một hành tinh, kết hợp Uranium với nhau từ các nguyên tố thông thường.
 										<br>
-										Produces 2412 Uranium per second.
+										Tạo ra 2412 Uranium mỗi giây.
 										<br>
-										Uses 2719 Energy per second.
+										Sử dụng 2719 Năng lượng mỗi giây.
 										<br>
-										Costs <span id='planetNukeTitaniumCost'>486000</span> Titanium, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Ice
+										 <span id='planetNukeTitaniumCost'>486000</span> Titan, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Băng
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlanetNuke()" class="btn btn-default">Get Planetary Nuclear Plant</button>
-									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">Destroy Planetary Nuclear Plant</button>
+									<button onclick="getPlanetNuke()" class="btn btn-default">Chế tạo Nhà máy hạt nhân hành tinh</button>
+									<button onclick="destroyMachine('planetNuke')" class="btn btn-default destroy hidden">
+Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 						</table>
@@ -1036,50 +1037,50 @@ Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recycler
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Oil
+										Dầu khí
 									</h2>
 									<span>
-										Oil is pumped up from the ground and is used to build Tier 2 resource gatherers.
+										Dầu được bơm lên từ lòng đất và được sử dụng để xây dựng các cơ sở thu thập tài nguyên thế hệ 2.
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('oil')" class="btn btn-default">Gain <span id="oilGain">1</span></div>
+									<div onclick="gainResource('oil')" class="btn btn-default">Nhận <span id="oilGain">1</span></div>
 									</hide>
 								</td>
 							</tr>
 							<tr id="oilStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										Nâng cấp kho
 									</h3>
 									<span>
-										Upgrade your Oil storage size to <span id="oilNextStorage">100</span>.
+										Nâng cấp kho dầu lên <span id="oilNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="oilLimitType">full</span> storage: <b><span id="oilLimitTime">N/A</span></b>
+										Thời gian cho đến khi <span id="oilLimitType">đầy</span> kho: <b><span id="oilLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="oilStorageCost">50</span> Oil, <span id="oilStorageMetalCost">20</span> Metal.
+										Nguyên liệu cần để nâng cấp bao gồm <span id="oilStorageCost">50</span> Dầu, <span id="oilStorageMetalCost">20</span> Kim loại.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeOilStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeOilStorage()" class="btn btn-default"> Nâng cấp</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Small Pump: <span id="pump">0</span>
+										Bơm nhỏ: <span id="pump">0</span>
 									</h3>
 									<span>
-										Build a small pump to extract Oil from the ground
+										Xây dựng một máy bơm nhỏ để hút dầu từ lòng đất
 										<br>
-										Produces 1 Oil per second.
+										Tạo ra 1 dầu mỗi giây.
 										<br>
-										Costs <span id="pumpMetalCost">60</span> Metal, <span id="pumpGemCost">20</span> Gems.
+										Nguyên liệu sản xuất bao gồm <span id="pumpMetalCost">60</span> Kim loại, <span id="pumpGemCost">20</span> Đá quý.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">Get Pump</button>
+									<button onclick="getPump()" class="btn btn-default">Chế tạo</button>
 									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">Destroy Small Pump</button>
 								</td>
 							</tr>
