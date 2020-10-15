@@ -3,7 +3,7 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Space Company</title>
+	<title>King Of Galaxy</title>
 	<link href="SpaceCompanyFavicon.png" rel="shortcut icon" type="image/x-icon" />
 	<link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css" id="theme_css"/>
 	<link href="lib/pnotify.custom.min.css" rel="stylesheet" type="text/css">
@@ -693,163 +693,163 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Energy
+										Năng lượng
 									</h2>
 									<span>
-										Energy is created by power sources such as steam engines, solar power and advances even to fusion power and nuclear energy. The maximum you can hold to start with is 100,000 Energy, but batteries are unlockable which can increase this.
+										Năng lượng được tạo ra từ các nguồn điện như động cơ hơi nước, năng lượng mặt trời và thậm chí cả năng lượng nhiệt hạch và năng lượng hạt nhân. Mức tối đa bạn có thể giữ để bắt đầu là 100.000 Năng lượng, nhưng pin có thể mở khóa có thể làm tăng điều này.
 										<br>
-										Time remaining until <span id="energyLimitType">full</span> storage: <b><span id="energyLimitTime">N/A</span></b>
+										Thời gian cho đến khi <span id="energyLimitType">đầy</span> kho: <b><span id="energyLimitTime">N/A</span></b>
 										<br>
 									</span>
 									<br>
-									<button onclick="toggleEnergy()" class="btn btn-default">Toggle All Energy Production + Consumption</button>
+									<button onclick="toggleEnergy()" class="btn btn-default">Chuyển đổi tất cả sản xuất + tiêu thụ năng lượng</button>
 								</td>
 							</tr>
 							<tr id="batteries" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Batteries: <span id="battery">0</span>
+										Pin: <span id="battery">0</span>
 									</h3>
 									<span>
-										Batteries increase your energy storage by 50,000 per battery built.
+										Mỗi cục pin nhỏ sẽ cho bạn có thể chứa thêm 50,000 đơn vị năng lượng.
 										<br>
-										Costs <span id="batteryMetalCost">50,000</span> Metal, <span id="batteryGemCost">50,000</span> Gems, <span id="batteryLunariteCost">30,000</span> Lunarite.
+										Nguyên liệu chế tạo bao gồm <span id="batteryMetalCost">50,000</span> Kim Loại, <span id="batteryGemCost">50,000</span> Đá quý, <span id="batteryLunariteCost">30,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBattery()" class="btn btn-default">Get Battery</button>
+									<button onclick="getBattery()" class="btn btn-default">Chế tạo Pin</button>
 								</td>
 							</tr>
 							<tr id="batteriesT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2 Batteries: <span id="batteryT2">0</span>
+										Pin thế hệ 2: <span id="batteryT2">0</span>
 									</h3>
 									<span>
-										Tier 2 Batteries increase your energy storage by 500,000 per battery built.
+										Pin thế hệ, với công nghệ cải tiến, nó sẽ cho bạn chứa thêm 500,000 đơn vị điện mỗi pin.
 										<br>
-										Costs <span id="batteryT2MetalCost">550,000</span> Metal, <span id="batteryT2GemCost">550,000</span> Gems, <span id="batteryT2LunariteCost">330,000</span> Lunarite.
+										Nguyên liệu chế tạo bao gồm <span id="batteryT2MetalCost">550,000</span> Kim loại, <span id="batteryT2GemCost">550,000</span> Đá quý, <span id="batteryT2LunariteCost">330,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT2()" class="btn btn-default">Get Battery T2</button>
+									<button onclick="getBatteryT2()" class="btn btn-default">Chế tạo Pin thế hệ 2</button>
 								</td>
 							</tr>
 							<tr id="batteriesT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T3 Batteries: <span id="batteryT3">0</span>
+										Pin thế hệ 3: <span id="batteryT3">0</span>
 									</h3>
 									<span>
-										Tier 3 Batteries increase your energy storage by 5,000,000 per battery built.
+										Pin thế hệ 3, với công nghệ còn cải tiến hơn cả thế hệ 2, cho bạn chứa thêm 5,000,000 đơn vị điện mỗi pin.
 										<br>
-										Costs <span id="batteryT3MetalCost">5,500,000</span> Metal, <span id="batteryT3GemCost">5,500,000</span> Gems, <span id="batteryT3LunariteCost">3,300,000</span> Lunarite.
+										Nguyên liệu chế tạo bao gồm <span id="batteryT3MetalCost">5,500,000</span> Kim loại, <span id="batteryT3GemCost">5,500,000</span> Đá quý, <span id="batteryT3LunariteCost">3,300,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT3()" class="btn btn-default">Get Battery T3</button>
+									<button onclick="getBatteryT3()" class="btn btn-default">Chế tạo Pin thế hệ 3</button>
 								</td>
 							</tr>
 							<tr id="batteriesT4" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T4 Batteries: <span id="batteryT4">0</span>
+										Pin thế hệ 4: <span id="batteryT4">0</span>
 									</h3>
 									<span>
-										Tier 4 Batteries increase your energy storage by 50,000,000 per battery built.
+										Khỏi bàn tới trình độ công nghệ khi một cục pin nhỏ này có thể chứa tới 50,000,000 đơn vị điện.
 										<br>
-										Costs <span id="batteryT4MetalCost">55,000,000</span> Metal, <span id="batteryT4GemCost">55,000,000</span> Gems, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
+										Nguyên liệu chế tạo bao gồm <span id="batteryT4MetalCost">55,000,000</span> Kim loại, <span id="batteryT4GemCost">55,000,000</span> Đá quý, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT4()" class="btn btn-default">Get Battery T4</button>
+									<button onclick="getBatteryT4()" class="btn btn-default">Chế tạo Pin thế hệ 4</button>
 								</td>
 							</tr>
 							<tr id="batteriesT5" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T5 Batteries: <span id="batteryT5">0</span>
+										Pin thế hệ 5: <span id="batteryT5">0</span>
 									</h3>
 									<span>
-										Tier 5 Batteries increase your energy storage by 500,000,000 per battery built.
+										Pin "khủng" nhất hiên tại, với số lượng lưu trữ cực lớn lên tới 500,000,000 mỗi pin
 										<br>
-										Costs <span id="batteryT5MetalCost">490,000,000</span> Metal, <span id="batteryT5GemCost">490,000,000</span> Gems, <span id="batteryT5LunariteCost">290,000,000</span> Lunarite.
+										Nguyên liệu chế tạo bao gồm <span id="batteryT5MetalCost">490,000,000</span> Kim loại, <span id="batteryT5GemCost">490,000,000</span> Đá quý, <span id="batteryT5LunariteCost">290,000,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT5()" class="btn btn-default">Get Battery T5</button>
+									<button onclick="getBatteryT5()" class="btn btn-default">Chế tạo Pin thế hệ 5</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Charcoal Engine: <span id="charcoalEngine">0</span>
+										Động cơ than: <span id="charcoalEngine">0</span>
 									</h3>
 									<span>
-										Burns Charcoal to produce a steady source of Energy.
+										Đốt than củi để tạo ra năng lượng
 										<br>
-										Each engine produces <span id="charcoalEngineOutput">2</span> Energy and uses 1 Charcoal per second.
+										Mỗi động cơ cho ra <span id="charcoalEngineOutput">2</span> Năng lượng và tiêu tốn 1 Than củi mỗi giây.
 										<br>
-										Costs <span id="charcoalEngineMetalCost">50</span> Metal, <span id="charcoalEngineGemCost">25</span> Gems.
+										Nguyên liệu sản xuất là <span id="charcoalEngineMetalCost">50</span> Kim loại, <span id="charcoalEngineGemCost">25</span> Đâ quý.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCharcoalEngine()" class="btn btn-default">Get Charcoal Engine</button>
-									<button onclick="destroyMachine('charcoalEngine')" class="btn btn-default destroy hidden">Destroy Charcoal Engine</button>
+									<button onclick="getCharcoalEngine()" class="btn btn-default">Sản xuất động cơ than</button>
+									<button onclick="destroyMachine('charcoalEngine')" class="btn btn-default destroy hidden">Bỏ đi, không dùng nữa</button>
 								</td>
 							</tr>
 							<tr id="solarPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Solar Panels: <span id="solarPanel">0</span>
+										Tấm năng lượng mặt trời: <span id="solarPanel">0</span>
 									</h3>
 									<span>
-										Gains Energy slowly from the sun without using any resources.
+										Sản xuất năng lượng mà không cần thêm bất cứ thứ gì khác.
 										<br>
-										Each Solar Panel produces <span id="solarPanelOutput">1.5</span> Energy per second.
+										Mỗi tấm năng lượng mặt trời tạo ra <span id="solarPanelOutput">1.5</span> Năng lượng mỗi giây.
 										<br>
-										Costs <span id="solarPanelMetalCost">30</span> Metal, <span id="solarPanelGemCost">35</span> Gems.
+										Nguyên liệu sản xuất bao gồm <span id="solarPanelMetalCost">30</span> Kim loại, <span id="solarPanelGemCost">35</span> Đá quý.
 									</span>
 									<br>
 									<br>
-									<button onclick="getSolarPanel()" class="btn btn-default">Get Solar Panel</button>
-									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">Destroy Solar Panel</button>
+									<button onclick="getSolarPanel()" class="btn btn-default">Chế tạo Tấm năng lượng mặt trời</button>
+									<button onclick="destroyMachine('solarPanel')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="methanePower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Methane Power Stations: <span id="methaneStation">0</span>
+										Trạm điện Mê-tan: <span id="methaneStation">0</span>
 									</h3>
 									<span>
-										Burn powerful methane from Venus to satisfy all your power needs.
+										Đốt khí mê-tan mạnh mẽ từ Sao Kim để đáp ứng mọi nhu cầu về năng lượng của bạn.
 										<br>
-										Each Power Station produces 23 Energy and uses 6 methane per second.
+										Mỗi Trạm điện Mê-tan tạo ra 23 Năng lượng và sử dụng 6 khí mê-tan mỗi giây.
 										<br>
-										Costs <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
+										Nguyên liệu sản xuất bao gồm <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titan.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMethaneStation()" class="btn btn-default">Get Methane Power Station</button>
-									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">Destroy Methane Station</button>
+									<button onclick="getMethaneStation()" class="btn btn-default">Chế tạo Trạm điện Mê-tan</button>
+									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="nuclearPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Nuclear Power Stations: <span id="nuclearStation">0</span>
+										Nhà máy điện hạt nhân: <span id="nuclearStation">0</span>
 									</h3>
 									<span>
-										Uses fission to create large amounts of power.
+										Sử dụng sự phân hạch để tạo ra một lượng lớn năng lượng.
 										<br>
-										Each Power Station produces 153 Energy and uses 7 uranium per second.
+										Mỗi Trạm điện tạo ra 153 Năng lượng và sử dụng 7 uranium mỗi giây.
 										<br>
-										Costs <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
+										Nguyên liệu sản xuất bao gồm <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titan.
 									</span>
 									<br>
 									<br>
-									<button onclick="getNuclearStation()" class="btn btn-default">Get Nuclear Power Station</button>
-									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">Destroy Nuclear Station</button>
+									<button onclick="getNuclearStation()" class="btn btn-default">Chế tạo Nhà máy điện hạt nhân</button>
+									<button onclick="destroyMachine('nuclearStation')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="magmaticPower" class="hidden">
@@ -858,34 +858,34 @@
 										Magmatic Dynamo: <span id="magmatic">0</span>
 									</h3>
 									<span>
-										The Magmatic Dynamo is a method of producing power by using lava as a fuel. Because of the extreme temperature of lava, a lot of Energy can be produced at once.
+										Magmatic Dynamo là một phương pháp sản xuất năng lượng bằng cách sử dụng dung nham làm nhiên liệu. Do nhiệt độ cực cao của dung nham, rất nhiều Năng lượng có thể được tạo ra cùng một lúc.
 										<br>
-										Each Power Station produces 191 Energy and uses 11 lava per second.
+										Mỗi Trạm điện tạo ra 191 Năng lượng và sử dụng 11 dung nham mỗi giây.
 										<br>
-										Costs <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Gems, <span id="magmaticSilverCost">20,000</span> Silver.
+										Nguyên liệu sản xuất bao gồm <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Đá quý, <span id="magmaticSilverCost">20,000</span> Bạc.
 									</span>
 									<br>
 									<br>
-									<button onclick="getMagmatic()" class="btn btn-default">Get Magmatic Dynamo</button>
-									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">Destroy Magmatic Dynamo</button>
+									<button onclick="getMagmatic()" class="btn btn-default">Chế tạo Magmatic Dynamo</button>
+									<button onclick="destroyMachine('magmatic')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="fusionPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fusion Reactor: <span id="fusionReactor">0</span>
+										Lò phản ứng nhiệt hạch: <span id="fusionReactor">0</span>
 									</h3>
 									<span>
-										In a fusion reaction, Energy is released when two light atomic nuclei are fused together to form one heavier atom. This is the same reaction that occurs in stars and produces a lot of power.
+										Trong phản ứng nhiệt hạch, Năng lượng được giải phóng khi hai hạt nhân nguyên tử nhẹ hợp nhất với nhau để tạo thành một nguyên tử nặng hơn. Đây là phản ứng tương tự xảy ra ở các ngôi sao và tạo ra rất nhiều năng lượng.
 										<br>
-										Each Power Station produces 273 Energy and uses 10 Hydrogen and 10 Helium per second.
+										Mỗi Trạm điện sản xuất 273 Năng lượng và sử dụng 10 Hydro và 10 Heli mỗi giây.
 										<br>
-										Costs <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
+										Nguyên liệu sản xuất bao gồm <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titan, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getFusionReactor()" class="btn btn-default">Get Fusion Reactor</button>
-									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">Destroy Fusion Reactor</button>
+									<button onclick="getFusionReactor()" class="btn btn-default">Chế tạo Lò phản ứng nhiệt hạch</button>
+									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 						</table>
@@ -900,12 +900,12 @@
 										Uranium
 									</h2>
 									<span>
-										Uranium is used for nuclear power generation because when it is split, it releases huge amounts of Energy. For this reason, it is prominent in many advanced machines and for propulsion technology as it is useful for inter-star-system travel. Unfortunately, it is hard to get and it requires a lot of resources to radiation-proof equipment.
+										Uranium được sử dụng để sản xuất điện hạt nhân vì khi nó bị phân tách, nó sẽ giải phóng một lượng năng lượng khổng lồ. Vì lý do này, nó nổi bật trong nhiều máy móc tiên tiến và công nghệ đẩy vì nó rất hữu ích cho việc du hành giữa các hệ sao. Thật không may, nó rất khó để có được và nó đòi hỏi rất nhiều nguồn lực cho thiết bị chống bức xạ.
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('uranium')" class="btn btn-default">Gain <span id="uraniumGain">1</span></div>
+									<div onclick="gainResource('uranium')" class="btn btn-default">Nhận <span id="uraniumGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -914,36 +914,36 @@
 							<tr id="uraniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										Storage Upgrade
+										Nâng cấp kho
 									</h3>
 									<span>
-										Upgrade your Uranium storage size to <span id="uraniumNextStorage">100</span>.
+										Nâng cấp kích thước lưu trữ Uranium của bạn lên <span id="uraniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="uraniumLimitType">full</span> storage: <b><span id="uraniumLimitTime">N/A</span></b>
+										Thời gian cho tới khi <span id="uraniumLimitType">đầy</span> kho: <b><span id="uraniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
+										Nguyên liệu cần để nâng cấp bao gồm <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
-									<button onclick="upgradeUraniumStorage()" class="btn btn-default">Upgrade Storage</button>
+									<button onclick="upgradeUraniumStorage()" class="btn btn-default">Nâng cấp</button>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Grinder: <span id="grinder">0</span>
+										Máy mài: <span id="grinder">0</span>
 									</h3>
 									<span>
-										Pulverizes Uranium for easy transportation out of deep mineshafts.
+										Nghiền Uranium để dễ dàng vận chuyển ra khỏi các trục mỏ sâu.
 										<br>
-										Produces 1 Uranium per second.
+										Tạo ra 1 Uranium mỗi giây.
 										<br>
-										Costs <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
+										Nguyên liệu sản xuất bao gồm <span id="grinderTitaniumCost">2000</span> Titan, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Vàng.
 									</span>
 									<br>
 									<br>
-									<button onclick="getGrinder()" class="btn btn-default">Get Grinder</button>
-									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">Destroy Grinder</button>
+									<button onclick="getGrinder()" class="btn btn-default">Chế tạo Grinder</button>
+									<button onclick="destroyMachine('grinder')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr>
@@ -952,18 +952,18 @@
 										Cubic Teleposer: <span id="cubic">0</span>
 									</h3>
 									<span>
-										This teleposes blocks of rock from far underground to the surface so that Uranium can be mined more easily.
+										Điều này dịch chuyển các khối đá từ xa dưới lòng đất lên bề mặt để có thể khai thác Uranium dễ dàng hơn.
 										<br>
-										Produces 9 Uranium per second.
+										Tạo ra 9 Uranium mỗi giây.
 										<br>
-										Uses 40 Energy per second.
+										Sử dụng 40 Năng lượng mỗi giây.
 										<br>
-										Costs <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
+										Nguyên liệu sản xuất bao gồm <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Dầu.
 									</span>
 									<br>
 									<br>
-									<button onclick="getCubic()" class="btn btn-default">Get Cubic Teleposer</button>
-									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">Destroy Cubic Teleposer</button>
+									<button onclick="getCubic()" class="btn btn-default">Chế tạo Cubic Teleposer</button>
+									<button onclick="destroyMachine('cubic')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier3" class="hidden">
@@ -972,18 +972,18 @@
 										Uranium Enricher: <span id="enricher">0</span>
 									</h3>
 									<span>
-										The Enricher increases the quality of uranium mined and thus allows more of the uranium in rocks to be used in your company.
+										Enricher làm tăng chất lượng của uranium được khai thác.
 										<br>
-										Produces 61 Uranium per second.
+										Tạo ra 61 Uranium mỗi giây.
 										<br>
-										Uses 180 Energy per second.
+										Sử dụng 180 Năng lượng mỗi giây.
 										<br>
-										Costs <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
+										Nguyên liệu sản xuất bao gồm <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titan, <span id="enricherSiliconCost">13,500</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getEnricher()" class="btn btn-default">Get Uranium Enricher</button>
-									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">Destroy Uranium Enricher</button>
+									<button onclick="getEnricher()" class="btn btn-default">Chế tạo Uranium Enricher</button>
+									<button onclick="destroyMachine('enricher')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier4" class="hidden">
@@ -992,18 +992,19 @@
 										Yellowcake Recycler: <span id="recycler">0</span>
 									</h3>
 									<span>
-										Recycles used-up Uranium to provide the resources with a second use. This greatly increases the amount of Uranium you can use per second.
+										Tái chế Uranium đã sử dụng hết để cung cấp tài nguyên cho lần sử dụng thứ hai. Điều này làm tăng đáng kể lượng Uranium bạn có thể sử dụng mỗi giây.
 										<br>
-										Produces 235 Uranium per second.
+										Tạo ra 235 Uranium mỗi giây.
 										<br>
-										Uses 463 Energy per second.
+										Sử dụng 463 Năng lượng mỗi giây.
 										<br>
-										Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> Meteorite.
+										Nguyên liệu sản xuất bao gồm
+Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Mê-tan, <span id="recyclerMeteoriteCost">830</span> Vẫn Thiết.
 									</span>
 									<br>
 									<br>
-									<button onclick="getRecycler()" class="btn btn-default">Get Yellowcake Recycler</button>
-									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">Destroy Yellowcake Recycler</button>
+									<button onclick="getRecycler()" class="btn btn-default">Chế tạo Yellowcake Recycler</button>
+									<button onclick="destroyMachine('recycler')" class="btn btn-default destroy hidden">Bỏ 1 cái đi</button>
 								</td>
 							</tr>
 							<tr id="uraniumTier5" class="hidden">
