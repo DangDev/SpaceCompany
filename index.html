@@ -56,7 +56,7 @@
 <div id="loadScreen" style="width:100%; height:100%; background-color: black">
 	<div style="width:100%; height:3%"></div>
 	<div style="width:70%; font-size:72px; font-family: 'Orbitron', 'sans-serif'; font-weight: lighter; color:#ffffff; line-height:72px; text-align:center; margin: auto;">
-		Space Company
+		King Of Galaxy
 	<!-- </div>
 	<div style="margin-left:31%; "> -->
 		<br>
@@ -64,7 +64,7 @@
 		<br>
 	</div>
 	<div id="splashText" style="width:100%; font-size:40px; font-family: 'Orbitron', 'sans-serif'; font-weight: bold; color:#ffffff; line-height:40px; text-align:center;">
-		Reticulating Splines...
+		Loading...
 	</div>
 </div>
 <script type="text/javascript" src="data/splashTextData.js"></script>
@@ -108,14 +108,14 @@
 
 <!-- Nav tabs -->
 	<ul class="nav nav-tabs no-select" role="tablist" id="tabList">
-		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Resources</a></li>
-		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Research</a></li>
-    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Solar System</a></li>
-    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Wonders</a></li>
-    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Sol Center</a></li>
-    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Machines</a></li>
-    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> Help / FAQ</a></li>
-    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> More...</a></li>
+		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Tài Nguyên</a></li>
+		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Nâng cấp</a></li>
+    	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Hệ mặt trời</a></li>
+    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Kỳ Quan</a></li>
+    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Trung tâm hệ mặt trời</a></li>
+    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Máy móc</a></li>
+    	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> Trợ giúp / FAQ</a></li>
+    	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Thêm...</a></li>
 	</ul>
 
 
@@ -137,7 +137,7 @@
 						</td>
 						<td style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="plasmaps">0</span>/Sec
+								<span id="plasmaps">0</span>/giây
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:right;">
@@ -156,12 +156,12 @@
 						</td>
 						<td id="energyNav1" style="border:none; vertical-align:middle;">
 							<span>
-								Energy
+								Năng lượng
 							</span>
 						</td>
 						<td id="energyNav2" style="border: none; vertical-align:middle; text-align:center;">
 							<span>
-								<span id="energyps">0</span>/Sec
+								<span id="energyps">0</span>/giây
 							</span>
 						</td>
 						<td id="energyNav3" style="border:none; vertical-align:middle; text-align:right;">
@@ -185,7 +185,7 @@
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="uraniumps">0</span>/Sec
+								<span id="uraniumps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -202,12 +202,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lava
+								Dung nham
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lavaps">0</span>/Sec
+								<span id="lavaps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -220,7 +220,7 @@
 					</tr>
 					<tr id="collapseEarth" class="collapseEarth" style="border:none;">
 						<td colspan="4">
-							<span>Earth Resources</span> <span class="caret"></span>
+							<span>Tài nguyên trên Trái Đất</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="oilNav" onclick="activeResourceTab('oilNav')" class="sideTab hidden" href="#oilTab" aria-controls="oilTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -229,12 +229,12 @@
 						</td>
 						<td id="oilNav1" style="vertical-align:middle;">
 							<span>
-								Oil
+								Dầu khí
 							</span>
 						</td>
 						<td id="oilNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="oilps">0</span>/Sec
+								<span id="oilps">0</span>/giây
 							</span>
 						</td>
 						<td id="oilNav3" style="vertical-align:middle; text-align:right;">
@@ -251,12 +251,12 @@
 						</td>
 						<td id="metalNav1" style="vertical-align:middle;">
 							<span>
-								Metal
+								Kim loại
 							</span>
 						</td>
 						<td id="metalNav2" style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="metalps">0</span>/Sec
+								<span id="metalps">0</span>/giây
 							</span>
 						</td>
 						<td id="metalNav3" style="vertical-align:middle; text-align:right;">
@@ -273,12 +273,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gems
+								Đá quý
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="gemps">0</span>/Sec
+								<span id="gemps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -295,12 +295,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Charcoal
+								Than gỗ
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="charcoalps">0</span>/Sec
+								<span id="charcoalps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -317,12 +317,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Wood
+								Gỗ
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="woodps">0</span>/Sec
+								<span id="woodps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -344,7 +344,7 @@
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="siliconps">0</span>/Sec
+								<span id="siliconps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -357,7 +357,7 @@
 					</tr>
 					<tr id="collapseInnerPlanet" class="collapseInnerPlanet hidden">
 						<td colspan="4">
-							<span>Inner Planetary Resources</span> <span class="caret"></span>
+							<span>Tài nguyên thuộc Mặt trăng, Sao Kim, Sao Thủy, Sao Hỏa</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="lunariteNav" onclick="activeResourceTab('lunariteNav')" class="sideTab hidden" href="#lunariteTab" aria-controls="lunariteTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -371,7 +371,7 @@
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="lunariteps">0</span>/Sec
+								<span id="lunariteps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -388,12 +388,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Methane
+								Khí Mê-tan
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="methaneps">0</span>/Sec
+								<span id="methaneps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -410,12 +410,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Titanium
+								Titan
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="titaniumps">0</span>/Sec
+								<span id="titaniumps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -432,12 +432,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Gold
+								Vàng
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="goldps">0</span>/Sec
+								<span id="goldps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -454,12 +454,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Silver
+								Bạc
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="silverps">0</span>/Sec
+								<span id="silverps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -472,7 +472,7 @@
 					</tr>
 					<tr id="collapseOuterPlanet" class="collapseOuterPlanet hidden">
 						<td colspan="4">
-							<span>Outer Planetary Resources</span> <span class="caret"></span>
+							<span>Tài nguyên thuộc hành tinh</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="hydrogenNav" onclick="activeResourceTab('hydrogenNav')" class="sideTab hidden" href="#hydrogenTab" aria-controls="hydrogenTab" role="tab" data-toggle="tab" style="height:60px;">
