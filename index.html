@@ -472,7 +472,7 @@
 					</tr>
 					<tr id="collapseOuterPlanet" class="collapseOuterPlanet hidden">
 						<td colspan="4">
-							<span>Tài nguyên thuộc hành tinh</span> <span class="caret"></span>
+							<span>Tài nguyên thuộc hành tinh Sao Mộc, Sao Thổ, Sao Thiên Vương, Sao Hải Vương</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="hydrogenNav" onclick="activeResourceTab('hydrogenNav')" class="sideTab hidden" href="#hydrogenTab" aria-controls="hydrogenTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -481,12 +481,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Hydrogen
+								Khí Hydro
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="hydrogenps">0</span>/Sec
+								<span id="hydrogenps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -503,12 +503,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Helium
+								Khí Heli
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="heliumps">0</span>/Sec
+								<span id="heliumps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -525,12 +525,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Ice
+								Băng
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="iceps">0</span>/Sec
+								<span id="iceps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -547,12 +547,12 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Meteorite
+								Vẫn Thiết
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
 							<span>
-								<span id="meteoriteps">0</span>/Sec
+								<span id="meteoriteps">0</span>/giây
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:right;">
@@ -575,16 +575,17 @@
 										Plasma
 									</h2>
 									<span>
-										Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company. At first you can hold 100,000 plasma at once, but you can unlock and purchase Plasma Storage Units to increase this number.
+										Plasma là 1 trong 4 trạng thái cơ bản của vật chất. Được mô tả lần đầu tiên bởi nhà hóa học Irving Langmuir từ những năm 1920. Bao gồm 1 loại khí của các ion. Nói cách khác là các nguyên tửu đã loại bỏ 1 số electron tự do trong quỹ đạo của chúng.
+										Plasma có thể tạo ra một cách nhân tạo bằng cách đốt nóng 1 loại khí trung tính. Hoặc đặt vào 1 trường điện từ mạnh đến mức mà chất khí đó bị ion hóa trở nên ngày càng dẫn điện. Kết quả là các ion và electron tích điện bị ảnh hưởng bởi các trường điện từ tầm xa. Làm cho động lực học của chúng nhạy với trường điện hơn so với khí trung tính.
 										<br>
-										Time remaining until <span id="plasmaLimitType">full</span> storage: <b><span id="plasmaLimitTime">N/A</span></b>
+										Thời gian cho đến khi <span id="plasmaLimitType">đầy</span> kho: <b><span id="plasmaLimitTime">N/A</span></b>
 										<br>
-										1 Plasma is created by infusing <span id="manualPlasmaHydrogenCost">10</span> Hydrogen with <span id="manualPlasmaEnergyCost">1000</span> Energy.
+										1 Plasma được tạo ra từ <span id="manualPlasmaHydrogenCost">10</span> Khí Hiđro với <span id="manualPlasmaEnergyCost">1000</span> năng lượng.
 									</span>
 									<br>
 									<br>
 									<hide class="gainButton">
-										<div onclick="gainResource('plasma')" class="btn btn-default">Gain <span id="plasmaGain">1</span></div>
+										<div onclick="gainResource('plasma')" class="btn btn-default">Nhận Plasma <span id="plasmaGain">1</span></div>
 										<br>
 										<br>
 									</hide>
@@ -596,13 +597,13 @@
 										PSUs: <span id="PSU">0</span>
 									</h3>
 									<span>
-										PSUs increase your plasma storage by 50,000 per PSU built.
+										PSUs tăng giới hạn kho của bạn mỗi 50,000 với 1 PSU được tạo ra.
 										<br>
-										Costs <span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										Nguyên liệu chế tạo là <span id="PSUSilverCost">770,000</span> Bạc, <span id="PSUGoldCost">770,000</span> Vàng, <span id="PSUUraniumCost">550,000</span> Uranium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSU()" class="btn btn-default">Get PSU</button>
+									<button onclick="getPSU()" class="btn btn-default">Chế tạo PSU</button>
 								</td>
 							</tr>
 							<tr id="plasmaStorageUnitsT2" class="hidden">
@@ -611,13 +612,13 @@
 										T2 PSUs: <span id="PSUT2">0</span>
 									</h3>
 									<span>
-										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
+										Tier 2 PSUs tăng giới hạn kho của bạn mỗi 500,000 với 1 Tier 2 PSU được chế tạo.
 										<br>
-										Costs <span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										Nguyên liệu chế tạo là <span id="PSUT2SilverCost">9.300M</span> Bạc, <span id="PSUT2GoldCost">9.300M</span> Vàng, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPSUT2()" class="btn btn-default">Get PSU T2</button>
+									<button onclick="getPSUT2()" class="btn btn-default">Chế tạo PSU T2</button>
 								</td>
 							</tr>
 							<tr>
@@ -626,19 +627,19 @@
 										Super-Heater: <span id="heater">0</span>
 									</h3>
 									<span>
-										The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.
+										Super-Heater cần năng lượng để làm nóng thêm plasma, cho plasma chất lượng hơn.
 										<br>
-										Uses 1,000 Energy and 10 Hydrogen per second.
+										Cần 1,000 năng lượng và 10 Khí Hiđro mỗi giây.
 										<br>
-										Produces 1 Plasma per second.
+										Tạo ra 1 Plasma mõi giây.
 										<br>
-										Costs <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Gems, <span id="heaterSiliconCost">59,000</span> Silicon.
+										Nguyên liệu chế tạo <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Đá quý, <span id="heaterSiliconCost">59,000</span> Silicon.
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">Get Super-Heater</button>
-									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">Off</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Destroy Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">Chế tạo Super-Heater</button>
+									<button onclick="toggleHeater()" class="btn btn-default">Bật Super-Heater <span id="heaterToggled">Off</span></button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Bỏ Super-Heater</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
@@ -647,40 +648,40 @@
 										Plasmatic Pit: <span id="plasmatic">0</span>
 									</h3>
 									<span>
-										This contraption converts Helium into Plasma through firing intensive energy bolts at the gas cloud.
+										Công cụ này chuyển hóa Helium thành Plasma thông qua việc bắn các tia năng lượng mạnh vào đám mây khí.
 										<br>
-										Uses 8,500 Energy and 80 Helium per second.
+										Cần 8,500 năng lượng và 80 khí Heli mỗi giây.
 										<br>
-										Produces 10 Plasma per second.
+										Tạo ra 10 Plasma mỗi giây.
 										<br>
-										Costs <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Meteorite.
+										Nguyên liệu chế tạo bao gồm <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Vẫn Thiết.
 									</span>
 									<br>
 									<br>
-									<button onclick="getPlasmatic()" class="btn btn-default">Get Plasmatic Pit</button>
-									<button onclick="togglePlasmatic()" class="btn btn-default">Turn Plasmatic Pit <span id="plasmaticToggled">Off</span></button>
-									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">Destroy Plasmatic Pit</button>
+									<button onclick="getPlasmatic()" class="btn btn-default">Chế tạo Plasmatic Pit</button>
+									<button onclick="togglePlasmatic()" class="btn btn-default">Bật Plasmatic Pit <span id="plasmaticToggled">Off</span></button>
+									<button onclick="destroyMachine('plasmatic')" class="btn btn-default destroy hidden">Bỏ Plasmatic Pit</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Electron Bath: <span id="bath">0</span>
+										Bộ kích không gian điện tử: <span id="bath">0</span>
 									</h3>
 									<span>
-										Bathing in Electrons. What could go wrong?
+										Tăng lượng điện cần để tạo ra Plasma với số lượng lớn
 										<br>
-										Uses 15,000 Energy and 100 Helium and 100 Hydrogen per second.
+										Cần 15,000 Năng lượng và 100 Khí Heli và 100 Khí Hiđro mỗi giây.
 										<br>
-										Produces 140 Plasma per second.
+										Tạo ra 140 Plasma mỗi giây.
 										<br>
-										Costs <span id="bathLavaCost">6.20M</span> Lava, <span id="bathGoldCost">5.90M</span> Gold, <span id="bathMeteoriteCost">12,100</span> Meteorite.
+										Nguyên liệu chế tạo bao gồm <span id="bathLavaCost">6.20M</span> Dung nham, <span id="bathGoldCost">5.90M</span> Vàng, <span id="bathMeteoriteCost">12,100</span> Vẫn Thiết.
 									</span>
 									<br>
 									<br>
-									<button onclick="getBath()" class="btn btn-default">Get Electron Bath</button>
-									<button onclick="toggleBath()" class="btn btn-default">Turn Electron Bath <span id="bathToggled">Off</span></button>
-									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">Destroy Electron Bath</button>
+									<button onclick="getBath()" class="btn btn-default">Chế tạo</button>
+									<button onclick="toggleBath()" class="btn btn-default">Trạng thái hoạt động <span id="bathToggled">Off</span></button>
+									<button onclick="destroyMachine('bath')" class="btn btn-default destroy hidden">Bỏ</button>
 								</td>
 							</tr>
 						</table>
